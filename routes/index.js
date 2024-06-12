@@ -11,9 +11,11 @@ router.use('/api-docs', swaggerUi.setup(swaggerDocument))
 
 const Admin = require("./admin")
 const Inventory = require("./inventory")
+const Aplikasi = require("./aplikasi")
 
 //API
 router.use("/api/v1/admin", Admin)
 router.use("/api/v1/inventory", Inventory)
+router.use("/api/v1/aplikasi", Aplikasi)
 
 module.exports = router
