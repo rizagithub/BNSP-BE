@@ -18,11 +18,3 @@ app.listen(port, () => {
   console.log(`Server running on ${Date(Date.now)}`);
   console.log(`Server listening on PORT: ${port}`);
 });
-
-
-
-app.listen(port, () => {
-  console.log(`Server running on ${new Date().toLocaleString()}`);
-  console.log(`Server listening on PORT: ${port}`);
-});
-
