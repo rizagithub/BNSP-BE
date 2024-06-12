@@ -1,23 +1,16 @@
 {
-  "version": 2,
-  "builds": [
-    {
-      "src": "index.js",
-      "use": "@vercel/node"
-    }
-  ],
-  "routes": [
-    {
-      "src": "/api/v1/admin/(.*)",
-      "dest": "/api/v1/admin/$1"
-    },
-    {
-      "src": "/api/v1/inventory/(.*)",
-      "dest": "/api/v1/inventory/$1"
-    },
-    {
-      "src": "/api/v1/aplikasi/(.*)",
-      "dest": "/api/v1/aplikasi/$1"
-    }
-  ]
-}
+    "version": 2,
+    "builds": [
+      {
+        "src": "./index.js",
+        "use": "@vercel/node"
+      }
+    ],
+    "routes": [
+      {
+        "src": "/(.*)",
+        "dest": "/"
+      }
+    ]
+  }
+  
